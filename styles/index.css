@@ -1,24 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-
 
 /* shared section */
 .primary {
   color: #FF5400;
 }
 
-.banner-content {}
-
 .banner {
   border: 2px solid aqua;
-  background-image: url('../Images/Group 13 (1) (1).png');
+  background-image: url('../images/Group 13 (1) (1).png');
   text-align: center;
-  justify-content: center;
-  margin-left: 30px;
-  /* padding: 138px 180px; */
+  margin: 30px auto;
   border-radius: 16px;
   width: 1180px;
   height: 500px;
@@ -33,6 +23,7 @@ section {
   font-family: Mulish;
   font-size: 64px;
   font-weight: 800;
+  margin: 0 auto;
 }
 
 .banner-description {
@@ -42,13 +33,13 @@ section {
 
 .title {
   display: flex;
-  margin-left: 20px;
+  margin-left:0 auto;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  /* margin: 0 auto; */
 }
 
 nav>ul {
@@ -86,12 +77,13 @@ input {
 
 .our-tour {
   display: flex;
-  width: 90%
+  /* width: 90% */
+  justify-content: center;
 }
 
 .our-tour img {
-  width: 100%;
-  height: 80%;
+  width: 500px;
+  height: 300px;
   margin: 30px;
 }
 
@@ -190,11 +182,11 @@ input {
   border: 2px solid antiquewhite;
   background-color: antiquewhite;
   justify-content: center;
-  width: 550px;
+  width: 500px;
   height: 250px;
   border-radius: 16px;
   padding: 16px;
-  margin: 0 500px;
+  margin: 0 auto;
 
 
 }
@@ -204,42 +196,50 @@ input {
   font-size: 20px;
   margin: 20px;
 }
-
 .sleep-chair {
+  display: flex;
   position: relative;
-  margin-left: 100px;
+  margin: 0 auto;
   border-radius: 16px;
+  justify-content: center;
 }
 
 .sleep-chair-title {
   position: absolute;
-  /* border: 1px solid green; */
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   left: 500px;
-  bottom: 50px;
+  bottom: 20px;
   background-color: white;
-  background: linear-gradient();
+  padding: 20px;
   border-radius: 16px;
-  text-align: left;
-  padding: 30px;
+  border-radius: 16px;
+border: 2px solid #FFF;
+background: rgba(255, 255, 255, 0.80);
+backdrop-filter: blur(2.5px);
 }
 
 .final {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
+  margin:50px 140px;
+  /* margin-left: 30px; */
+  padding: 30px;
 }
 
 .final-colum {
   border: 2px solid #FF5400;
   border-radius: 16px;
-  width: 500px;
+  width: 300px;
   height: 300px;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   background-color: white;
-
+}
+.final-img img{
+  width:500px;
+  height: 400px;
 }
 
 
@@ -247,22 +247,22 @@ input {
   position: relative;
   border: 1px solid grey;
   border-radius: 16px;
-  width: 500px;
-  height: 250px;
-}
+  width: 200px;
+  height: 150px;
+  margin-right: 50px;}
 
 .save-img {
   position: absolute;
   background-color: #FF5400;
   color: white;
   position: absolute;
-  top: 240px;
-  left: 290px;
-  width: 350px;
+  top: 200px;
+  left: 150px;
+  width: 300px;
   height: 120px;
   text-align: center;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 20px;
   transform: rotate(-20deg);
 
 }
@@ -274,20 +274,22 @@ input {
   border-radius: 8px;
 }
 footer{
-  width: 1500px;
-  height: 500px;
-  margin: 50px 40px;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
   background-color: beige;
   border-radius: 20px;
   text-align: center;
-  padding: 50px;
-
 }
 .footer-title{
   display: flex;
   justify-content:center;
   margin-top: 40px;
   margin-bottom: 60px;
+}
+hr{
+  width:800px;
+  margin:0 auto;
 }
 .icon{
   margin: 50px;
@@ -300,18 +302,83 @@ footer{
 
 
 @media screen and (max-width:600px) {
-  .banner {
-    padding: 30px;
-  }
-
-  .our-tour {
+  .banner
+  {
     flex-direction: column;
-    padding: 20px;
-    margin: 10px;
+    padding: 5px;
+    width: 400px;
+    height: 450px;
   }
-
-  .img-galary {
+  .our-tour{
     flex-direction: column;
+  }
+  .our-tour img{
+    width: 400px;
+    margin: 5px;
+  }
+  .img-galary{
+    flex-direction: column;
+  }
+  .first,  .second, .third, .hotel-map{
+    flex-direction: column;
+  }
+  .hotel-map{
+    margin: none;
+    margin-left: none;
+    padding-left:none;
+    padding: none;
+  }
+  .hotel, .map, .Price{
+    width: 400px;
+    margin: none;
+    padding: none;
+  }
+  .sleep-chair{
+    flex-direction: column;
+    /* height: 400px; */
+    height: 500px;
+    margin-bottom: 250px;
+  }
+  .sleep-chair-title{
+    width: 200px;
+    height: 400px;
+    position: absolute;
+  left: 150px;
+  bottom: 5px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 16px;
+  border: 2px solid #FFF;
+background: rgba(255, 255, 255, 0.80);
+backdrop-filter: blur(2.5px);
+text-align: center;
+  }
+  .final {
+    flex-direction: column;
+    margin: none;
+    padding: none;
+    gap: none;
+    margin-left: none;
+  }
+  .final-colum{
+    width: 400px;
+    padding: none;
+    margin-left: none;
+  }
+  .final-img{
+    width:200px;
+    height: 150px;
+    margin-right: none;
+    margin-left: none;
+    padding: none;
+    margin-bottom: 250px;
+  }
+  footer{
+    width: 500px;
+    height: 500px;
+  }
+  hr{
+    width:300px;
   }
 
 }
